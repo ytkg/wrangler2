@@ -8,7 +8,7 @@ try {
       console.log(err)
       process.exit(1)
     }
-    package.version = '0.0.0-' + stdout.trim()
+    package.version = '0.0.3-' + stdout.trim()
     fs.writeFileSync('./packages/wrangler/package.json', JSON.stringify(package, null, 2))
   })
 } catch (error) {
